@@ -1,0 +1,91 @@
+
+:root {
+    --primary-color: #6a1b9a;    /* Morado vibrante */
+    --secondary-color: #9c27b0;  /* Morado claro */
+    --dark-color: #2d1b4e;       /* Textos oscuros */
+    --light-gray: #f5f5f5;       /* Fondo de la pantalla */
+    --white: #ffffff;            /* Fondo de tarjetas */
+}
+
+/* ESTILOS GENERALES Y CENTRADO DE PANTALLA */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Asegura el centrado de los textos del encabezado */
+.text-center {
+    text-align: center !important;
+}
+
+/* CONTENEDOR DE LOGIN (TARJETA RESPONSIVA) */
+.container-login {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06); 
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.container-login h1, 
+.container-login p.text-muted,
+.container-login .text-center {
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* FORMULARIO: INPUTS Y CAMPOS DE TEXTO */
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box; 
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(123, 31, 162, 0.25);
+    outline: none;
+}
+
+/* BOTÓN PRINCIPAL (Sobrescribe Bootstrap con la paleta Alke Wallet) */
+.container-login .btn-primary {
+    display: block;
+    width: 100% !important; /* Hace que el botón abarque todo el ancho disponible */
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.container-login .btn-primary:hover {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}

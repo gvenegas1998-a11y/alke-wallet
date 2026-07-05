@@ -1,0 +1,131 @@
+/* Paleta de colores */
+:root {
+    --primary-color: #6a1b9a;    /* Morado vibrante */
+    --secondary-color: #9c27b0;  /* Morado claro */
+    --dark-color: #2d1b4e;       /*  textos */
+    --light-gray: #f5f5f5;       /* Fondo  */
+    --white: #ffffff;
+}
+/* márgenes que empujan la Navbar */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: var(--light-gray);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.navbar.bg-custom-purple {
+    background-color: var(--primary-color) !important;
+    background: var(--primary-color) !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    margin: 0 !important; 
+}
+
+/* CONTENEDOR DE LA TARJETA */
+.container {
+    background-color: var(--white);
+    padding: 3rem 2.5rem; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06); 
+    max-width: 800px; 
+    width: 100%;
+    margin: 50px auto; /* Centrado en pantalla */
+}
+/* Forzar el fondo morado en la Navbar anulando las variables de Bootstrap 5 */
+.navbar.bg-custom-purple {
+    background-color: var(--primary-color) !important;
+    background: var(--primary-color) !important;
+}
+
+/*Asegurar que el botón de Cerrar Sesión se vea nítido */
+.navbar .btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    color: var(--white) !important;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: var(--white) !important;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'Montserrat', sans-serif; 
+    color: var(--dark-color);
+}
+
+.container {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+/* Transición de suavizado para los ítems de contacto */
+.contact-item {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Efecto Hover para sugerir que es un elemento cliqueable */
+.contact-item:hover {
+  background-color: #f1f3f5;
+}
+
+/* Estilo para el contacto seleccionado (Sobrescribe Bootstrap) */
+.selected-contact {
+  background-color: #d4edda !important;
+  border-color: #c3e6cb !important;
+  box-shadow: inset 4px 0 0 #28a745; 
+}
+/* Estilo base del botón morado */
+.btn-morado {
+  color: #ffffff;
+  background-color: #6a1b9a;
+  border-color: #6a1b9a;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efecto cuando pasas el mouse por encima */
+.btn-morado:hover {
+  color: #ffffff;
+  background-color: #4a148c; 
+  border-color: #4a148c;
+}
+
+/* Efecto cuando se hace clic */
+.btn-morado:focus, .btn-morado:active {
+  box-shadow: 0 0 0 0.2rem rgba(106, 27, 154, 0.5);
+}

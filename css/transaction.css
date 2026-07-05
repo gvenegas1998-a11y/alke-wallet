@@ -1,0 +1,106 @@
+/* PALETA DE COLORES E INYECCIÓN DE VARIABLES */
+:root {
+    --primary-color: #6a1b9a;    /* Morado vibrante */
+    --secondary-color: #9c27b0;  /* Morado claro */
+    --dark-color: #2d1b4e;       /* Textos oscuros */
+    --light-gray: #f5f5f5;       /* Fondo de la pantalla */
+    --white: #ffffff;            /* Fondo de la tarjeta */
+}
+
+/* RESET BASE Y FUENTE CORPORATIVA */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: var(--light-gray);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-color);
+}
+
+/* BARRA DE NAVEGACIÓN SUPERIOR */
+.navbar.bg-custom-purple {
+    background-color: var(--primary-color) !important;
+    background: var(--primary-color) !important;
+    border-radius: 0 !important;
+}
+
+/* Estilo para el botón blanco de Cerrar Sesión */
+.navbar .btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    color: var(--white) !important;
+    border-radius: 50px;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: var(--white) !important;
+}
+
+/* CONTENEDOR DE LA TARJETA CENTRAL */
+.container-main {
+    max-width: 480px;
+    width: 90%;
+    margin: 50px auto;
+    background: var(--white);
+    padding: 3rem 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* TIPOGRAFÍA Y TÍTULOS */
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* FILTRO SELECTOR */
+.form-select {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    color: var(--dark-color);
+    padding: 10px;
+}
+
+.form-select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(156, 39, 176, 0.25);
+}
+
+/* ESTILOS BASE PARA LOS ÍTEMS DE LA LISTA QUE INYECTARÁ EL JS */
+.list-group-item {
+    border-radius: 8px !important;
+    margin-bottom: 8px;
+    border: 1px solid #f0f0f0 !important;
+    padding: 12px 15px;
+    transition: background-color 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.text-success {
+    color: #28a745 !important; /* Verde para depósitos recibidos */
+    font-weight: 600;
+}
+
+.text-danger {
+    color: #dc3545 !important; /* Rojo para transferencias enviadas */
+    font-weight: 600;
+}
+
+/* BOTÓN DE VOLVER */
+.btn-secondary {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+    color: var(--white) !important;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268 !important;
+}

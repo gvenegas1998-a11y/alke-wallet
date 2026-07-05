@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallet - Login</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+  <div class="container-login">
+    <h2>Alke wallet</h2>
+    <p class="text-muted">Fácil, rapido y seguro siempre.</p>
+    <div id="alert-container"></div>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="email" class="text-muted font-weight-bold">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingresar email" required>
+      </div>
+      <div class="form-group">
+        <label for="password" class="text-muted font-weight-bold">Contraseña:</label>
+        <input type="password" class="form-control" id="password" placeholder="Ingresar contraseña" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block mt-4">Iniciar sesión</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+
+</html>

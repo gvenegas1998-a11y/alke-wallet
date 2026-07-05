@@ -1,0 +1,113 @@
+/* PALETA DE COLORES */
+:root {
+    --primary-color: #6a1b9a;    /* Morado vibrante */
+    --secondary-color: #9c27b0;  /* Morado claro */
+    --dark-color: #2d1b4e;       /* Textos oscuros */
+    --light-gray: #f5f5f5;       /* Fondo de la pantalla */
+    --white: #ffffff;            /* Fondo de la tarjeta */
+}
+
+/* RESET BASE Y FUENTE */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: var(--light-gray);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-color);
+}
+
+/* BARRA DE NAVEGACIÓN SUPERIOR */
+.navbar.bg-custom-purple {
+    background-color: var(--primary-color) !important;
+    background: var(--primary-color) !important;
+    border-radius: 0 !important;
+}
+
+/* CONTENEDOR DE LA TARJETA PRINCIPAL */
+.container-main {
+    max-width: 500px;
+    width: 90%;
+    margin: 50px auto;
+    background: var(--white);
+    padding: 3rem 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+h2, h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* CAMPOS DE FORMULARIO */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(156, 39, 176, 0.25);
+}
+
+/* 6. BOTÓN AGREGAR NUEVO CONTACTO  */
+#btnAgregarContacto {
+    color: var(--primary-color) !important;
+    border: 2px solid var(--primary-color) !important;
+    background-color: transparent !important;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+#btnAgregarContacto:hover {
+    color: var(--white) !important;
+    background-color: var(--primary-color) !important;
+}
+
+/* 7. AGENDA INTERACTIVA DE CONTACTOS */
+.contact-item {
+    cursor: pointer;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 12px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-item:hover {
+    background-color: #f1f3f5;
+}
+
+/* Resalta el contacto que la persona pinche para transferir */
+.selected-contact {
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+    box-shadow: inset 5px 0 0 #28a745; 
+}
+
+/* BOTONES DE ACCIÓN PRINCIPALES */
+.btn-morado-submit {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-morado-submit:hover {
+    background-color: var(--secondary-color) !important;
+}
+
+.btn-volver {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+    color: var(--white) !important;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 8px;
+}
