@@ -7,7 +7,7 @@ El prototipo funcional incluye los siguientes flujos e interfaces clave:
 *   **Gestión de Autenticación (Login):** Pantalla de acceso con validación de credenciales para garantizar la seguridad del usuario.
 *   **Dashboard / Vista de la Wallet:** Interfaz principal que muestra de forma clara el saldo disponible, los datos del usuario y accesos rápidos.
 *   **Módulo de Transacciones:** Funcionalidad para realizar transferencias o pagos con actualización de saldo en tiempo real y confirmación visual del éxito de la operación.
-*   **Historial de Actividad:** Lista dinámica de los últimos movimientos, ingresos y egresos del usuario.
+*   **Historial de Actividad:** Lista dinámica de los últimos movimientos, ingresos y egresos requerido por el usuario.
 
 ---
 
